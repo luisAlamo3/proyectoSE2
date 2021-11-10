@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import Principal from './principal'
-import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import Input from '@mui/material/Input';
 import InputAdornment from '@mui/material/InputAdornment';
 import FormControl from '@mui/material/FormControl';
-import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import SearchIcon from '@mui/icons-material/Search';
@@ -19,8 +17,6 @@ const theme = createTheme({
   },
 });
 
-const ariaLabel = { 'aria-label': 'description' };
-
 export default class Regalo extends Component {
   render () {
     return (
@@ -34,7 +30,6 @@ export default class Regalo extends Component {
             <Box sx={{bgcolor:'neutral'}}>
               <FormControl variant="standard" id="formControl">
                 <Input
-                  inputProps={ariaLabel, {style: { color: 'black'}}}
                   id="inputSearch"
                   placeholder="Buscar regalo"
                   startAdornment={

@@ -19,8 +19,6 @@ const theme = createTheme({
   },
 });
 
-const ariaLabel = { 'aria-label': 'description' };
-
 export default class Unirse extends Component {
   render () {
     return (
@@ -34,7 +32,6 @@ export default class Unirse extends Component {
             <Box sx={{bgcolor:'neutral'}}>
               <FormControl variant="standard" id="formControl">
                 <Input
-                  inputProps={ariaLabel, {style: { color: 'black'}}}
                   id="inputSearch"
                   placeholder="Correo electrónico"
                   startAdornment={

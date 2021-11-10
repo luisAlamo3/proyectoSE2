@@ -16,8 +16,6 @@ const theme = createTheme({
   },
 });
 
-const ariaLabel = { 'aria-label': 'description' };
-
 export default class Intercambio extends Component {
   render () {
     return (

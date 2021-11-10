@@ -20,8 +20,6 @@ const theme = createTheme({
   },
 });
 
-const ariaLabel = { 'aria-label': 'description' };
-
 export default class AddFriend extends Component {
   render () {
     return (
@@ -35,7 +33,6 @@ export default class AddFriend extends Component {
             <Box>
               <FormControl variant="standard" id="formControl">
                 <Input
-                  inputProps={ariaLabel, {style: { color: 'black'}}}
                   id="inputSearch"
                   placeholder="Correo electrónico"
                   startAdornment={
